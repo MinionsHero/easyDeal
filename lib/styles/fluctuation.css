@@ -1,0 +1,179 @@
+
+/* Element Chalk Variables */
+/* Transition
+-------------------------- */
+/* Color
+-------------------------- */
+/* 53a8ff */
+/* 66b1ff */
+/* 79bbff */
+/* 8cc5ff */
+/* a0cfff */
+/* b3d8ff */
+/* c6e2ff */
+/* d9ecff */
+/* ecf5ff */
+/* Link
+-------------------------- */
+/* Border
+-------------------------- */
+/* Fill
+-------------------------- */
+/* Typography
+-------------------------- */
+/* Size
+-------------------------- */
+/* z-index
+-------------------------- */
+/* Disable base
+-------------------------- */
+/* Icon
+-------------------------- */
+/* Checkbox
+-------------------------- */
+/* Radio
+-------------------------- */
+/* Select
+-------------------------- */
+/* Alert
+-------------------------- */
+/* MessageBox
+-------------------------- */
+/* Message
+-------------------------- */
+/* Notification
+-------------------------- */
+/* Input
+-------------------------- */
+/* Cascader
+-------------------------- */
+/* Group
+-------------------------- */
+/* Tab
+-------------------------- */
+/* Button
+-------------------------- */
+/* cascader
+-------------------------- */
+/* Switch
+-------------------------- */
+/* Dialog
+-------------------------- */
+/* Table
+-------------------------- */
+/* Pagination
+-------------------------- */
+/* Popup
+-------------------------- */
+/* Popover
+-------------------------- */
+/* Tooltip
+-------------------------- */
+/* Tag
+-------------------------- */
+/* Tree
+-------------------------- */
+/* Dropdown
+-------------------------- */
+/* Badge
+-------------------------- */
+/* Card
+--------------------------*/
+/* Slider
+--------------------------*/
+/* Steps
+--------------------------*/
+/* Menu
+--------------------------*/
+/* Rate
+--------------------------*/
+/* DatePicker
+--------------------------*/
+/* Loading
+--------------------------*/
+/* Scrollbar
+--------------------------*/
+/* Carousel
+--------------------------*/
+/* Collapse
+--------------------------*/
+/* Transfer
+--------------------------*/
+/* Header
+  --------------------------*/
+/* Footer
+--------------------------*/
+/* Main
+--------------------------*/
+/* Timeline
+--------------------------*/
+/* Backtop
+--------------------------*/
+/* Link
+--------------------------*/
+/* Calendar
+--------------------------*/
+/* Form
+-------------------------- */
+/* Avatar
+--------------------------*/
+/* Break-point
+--------------------------*/
+/***涨跌幅***/
+.ed-fluctuation.ed-fluctuation-green.font {
+  color: #67C23A;
+  transition: color 300ms ease-out; }
+
+.ed-fluctuation.ed-fluctuation-green.border {
+  border: 1px #67C23A solid;
+  transition: border-color 300ms ease-out; }
+
+.ed-fluctuation.ed-fluctuation-green.outline {
+  outline: 1px #67C23A solid;
+  transition: outline-color 300ms ease-out; }
+
+.ed-fluctuation.ed-fluctuation-green.bg {
+  background-color: #67C23A;
+  transition: background-color 300ms ease-out;
+  color: #FFFFFF; }
+
+a.ed-fluctuation.ed-fluctuation-green.font:hover, button.ed-fluctuation.ed-fluctuation-green.font:hover {
+  color: #5daf34; }
+
+a.ed-fluctuation.ed-fluctuation-green.border:hover, a.ed-fluctuation.ed-fluctuation-green.border:active, button.ed-fluctuation.ed-fluctuation-green.border:hover, button.ed-fluctuation.ed-fluctuation-green.border:active {
+  border-color: #5daf34; }
+
+a.ed-fluctuation.ed-fluctuation-green.outline:hover, a.ed-fluctuation.ed-fluctuation-green.outline:active, button.ed-fluctuation.ed-fluctuation-green.outline:hover, button.ed-fluctuation.ed-fluctuation-green.outline:active {
+  outline-color: #5daf34; }
+
+a.ed-fluctuation.ed-fluctuation-green.bg:hover, button.ed-fluctuation.ed-fluctuation-green.bg:hover {
+  background-color: #5daf34; }
+
+.ed-fluctuation.ed-fluctuation-red.font {
+  color: #F56C6C;
+  transition: color 300ms ease-out; }
+
+.ed-fluctuation.ed-fluctuation-red.border {
+  border: 1px #F56C6C solid;
+  transition: border-color 300ms ease-out; }
+
+.ed-fluctuation.ed-fluctuation-red.outline {
+  outline: 1px #F56C6C solid;
+  transition: outline-color 300ms ease-out; }
+
+.ed-fluctuation.ed-fluctuation-red.bg {
+  background-color: #F56C6C;
+  transition: background-color 300ms ease-out;
+  color: #FFFFFF; }
+
+a.ed-fluctuation.ed-fluctuation-red.font:hover, button.ed-fluctuation.ed-fluctuation-red.font:hover {
+  color: #dd6161; }
+
+a.ed-fluctuation.ed-fluctuation-red.border:hover, a.ed-fluctuation.ed-fluctuation-red.border:active, button.ed-fluctuation.ed-fluctuation-red.border:hover, button.ed-fluctuation.ed-fluctuation-red.border:active {
+  border-color: #dd6161; }
+
+a.ed-fluctuation.ed-fluctuation-red.outline:hover, a.ed-fluctuation.ed-fluctuation-red.outline:active, button.ed-fluctuation.ed-fluctuation-red.outline:hover, button.ed-fluctuation.ed-fluctuation-red.outline:active {
+  outline-color: #dd6161; }
+
+a.ed-fluctuation.ed-fluctuation-red.bg:hover, button.ed-fluctuation.ed-fluctuation-red.bg:hover {
+  background-color: #dd6161; }

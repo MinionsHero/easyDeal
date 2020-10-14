@@ -1,0 +1,87 @@
+@import "variables";
+
+$color-map: (
+        'ed-fluctuation-green': (
+                'bg':$--fluctuation-bg-color-green,
+                'bg-hover':$--fluctuation-bg-color-green-hover,
+                'border':$--fluctuation-border-color-green,
+                'border-hover':$--fluctuation-border-color-green-hover,
+                'font':$--fluctuation-font-color-green,
+                'font-hover':$--fluctuation-font-color-green-hover,
+                'outline':$--fluctuation-outline-color-green,
+                'outline-hover':$--fluctuation-outline-color-green-hover,
+        ),
+        'ed-fluctuation-red': (
+                'bg':$--fluctuation-bg-color-red,
+                'bg-hover':$--fluctuation-bg-color-red-hover,
+                'border':$--fluctuation-border-color-red,
+                'border-hover':$--fluctuation-border-color-red-hover,
+                'font':$--fluctuation-font-color-red,
+                'font-hover':$--fluctuation-font-color-red-hover,
+                'outline':$--fluctuation-outline-color-red,
+                'outline-hover':$--fluctuation-outline-color-red-hover,
+        ),
+);
+.ed-fluctuation {
+  // 这里编写通用样式和不涨不跌的样式
+  @each $class-name, $value in $color-map {
+    &.#{$class-name} {
+      // 这里编写涨或者跌时的样式
+      &.font {
+        // 仅仅设置了字体涨跌样式
+        color: map-get($value, 'font');
+        transition: color 300ms ease-out;
+      }
+
+      &.border {
+        // 仅仅设置了边框涨跌样式
+        border: $--fluctuation-border-width map-get($value, 'border') $--fluctuation-border-style;
+        transition: border-color 300ms ease-out;
+      }
+
+      &.outline {
+        // 仅仅设置了边框涨跌样式
+        outline: $--fluctuation-outline-width map-get($value, 'outline') $--fluctuation-outline-style;
+        transition: outline-color 300ms ease-out;
+      }
+
+      &.bg {
+        // 仅仅设置了背景涨跌样式
+        background-color: map-get($value, 'bg');
+        transition: background-color 300ms ease-out;
+        color: $--fluctuation-bg-font-color;
+      }
+
+      // 针对链接和button，要加入hover样式
+      @at-root a#{&}, button#{&} {
+        &.font {
+          &:hover {
+            // 仅仅设置了字体涨跌样式
+            color: map-get($value, 'font-hover');
+          }
+        }
+
+        &.border {
+          &:hover, &:active {
+            // 仅仅设置了边框涨跌样式
+            border-color: map-get($value, 'border-hover');
+          }
+        }
+
+        &.outline {
+          &:hover, &:active {
+            // 仅仅设置了边框涨跌样式
+            outline-color: map-get($value, 'outline-hover');
+          }
+        }
+
+        &.bg {
+          &:hover {
+            // 仅仅设置了背景涨跌样式
+            background-color: map-get($value, 'bg-hover');
+          }
+        }
+      }
+    }
+  }
+}

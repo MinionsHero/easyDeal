@@ -1,0 +1,35 @@
+@import "../../node_modules/element-ui/packages/theme-chalk/src/common/var.scss";
+
+/***涨跌幅***/
+// 颜色定制
+$--fluctuation-color-danger-light: $--color-danger !default;
+$--fluctuation-color-danger: mix($--color-black, $--color-danger, 10%) !default;
+$--fluctuation-color-success-light: $--color-success !default;
+$--fluctuation-color-success: mix($--color-black, $--color-success, 10%) !default;
+// border
+$--fluctuation-border-width: 1px !default;
+$--fluctuation-border-style: solid !default;
+$--fluctuation-border-color-red: $--fluctuation-color-danger-light !default;
+$--fluctuation-border-color-red-hover: $--fluctuation-color-danger !default;
+$--fluctuation-border-color-green: $--fluctuation-color-success-light !default;
+$--fluctuation-border-color-green-hover: $--fluctuation-color-success !default;
+// outline
+$--fluctuation-outline-width: 1px !default;
+$--fluctuation-outline-style: solid !default;
+$--fluctuation-outline-color-red: $--fluctuation-color-danger-light !default;
+$--fluctuation-outline-color-red-hover: $--fluctuation-color-danger !default;
+$--fluctuation-outline-color-green: $--fluctuation-color-success-light !default;
+$--fluctuation-outline-color-green-hover: $--fluctuation-color-success !default;
+// bg
+$--fluctuation-bg-color-red: $--fluctuation-color-danger-light !default;
+$--fluctuation-bg-color-red-hover: $--fluctuation-color-danger !default;
+$--fluctuation-bg-color-green: $--fluctuation-color-success-light !default;
+$--fluctuation-bg-color-green-hover: $--fluctuation-color-success !default;
+$--fluctuation-bg-font-color: $--color-white !default;
+$--fluctuation-bg-padding-vertical: 2px !default;
+$--fluctuation-bg-padding-horizontal: 5px !default;
+// font
+$--fluctuation-font-color-red: $--fluctuation-color-danger-light !default;
+$--fluctuation-font-color-red-hover: $--fluctuation-color-danger !default;
+$--fluctuation-font-color-green: $--fluctuation-color-success-light !default;
+$--fluctuation-font-color-green-hover: $--fluctuation-color-success !default;
