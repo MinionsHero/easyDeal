@@ -1,8 +1,6 @@
 # easy-deal
 
 > UI components for finance,exchange,blockchain and so on.
->
-### [中文文档](./README.zh-CN.md)
 
 ### install
 
@@ -28,5 +26,8 @@ npm run serve
 + Kline：K line component。（Developing...）
 + node-vue-i18n：a vue-i18n util to resolve to modify the same variable in many related option files.（Developing...）
 
-Explore [more](https://github.com/MinionsHero/easyDeal/blob/master/doc/en-US/index.md)查看文档
+### more
+[English Doc](https://github.com/MinionsHero/easyDeal/blob/master/doc/en-US/index.md)
+
+[中文文档](https://github.com/MinionsHero/easyDeal/blob/master/doc/zh-CN/index.md)
 
