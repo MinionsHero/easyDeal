@@ -9,7 +9,7 @@
     "ui",
     "number"
   ],
-  "main": "index.js",
+  "main": "lib/index.js",
   "author": "minionhero",
   "license": "MIT",
   "dependencies": {

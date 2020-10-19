@@ -1,10 +1,10 @@
 # easy-deal
 
-> 专为金融交易网站需求而生的组件库
+> UI components for finance,exchange,blockchain and so on.
 >
-> 适用于区块链，证券，期货交易的常用组件库。
+### [中文文档](./README.zh-CN.md)
 
-### 安装
+### install
 
 npm install easy-deal
 
@@ -18,15 +18,15 @@ cd easyDeal
 
 npm run serve
 
-### doc文档
+### doc
 
-+ NumberInput：数字控制输入框
-+ OrderInput: 绑定了Slider的数字输入组件。
-+ Fluctuation：涨跌幅样式控制
-+ PromiseDialog：返回Promise的对话框，支持loading。
-+ WorkerContainer：适用于大量计算的列表容器。
-+ Kline：定制化k线组件。
-+ node-vue-i18n：更好用的vue-i8n多语言node工具，让你不用再在多个语言文件中修改同一个变量。
++ NumberInput：control input number string.
++ OrderInput: numberInput with slider。
++ Fluctuation：control the styles of up and down.
++ PromiseDialog：a dialog which can return a promise instance, and it can support loading state.。（Developing...）
++ WorkerContainer：a container to resolve CPU power。（Developing...）
++ Kline：K line component。（Developing...）
++ node-vue-i18n：a vue-i18n util to resolve to modify the same variable in many related option files.（Developing...）
 
-更多点击[这里](https://github.com/MinionsHero/easyDeal/blob/master/doc/index.md)查看文档
+Explore [more](https://github.com/MinionsHero/easyDeal/blob/master/doc/en-US/index.md)查看文档
 

@@ -6,16 +6,30 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="065cd9ea-2dae-42a0-a428-84c268d6428c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/vue2.x/Fluctuation.vue" afterDir="false" />
+    <list default="true" id="577839f5-3d86-4580-9dbd-189b5537eb3a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.zh-CN.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/zh-CN/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/components/NumberInputDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/demo/components/NumberInputDemo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/fluctuation.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/zh-CN/fluctuation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/numberInput.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/zh-CN/numberInput.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,125 +39,49 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
-        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../easydeal" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1ifqL3cn2CCPy9G7BxGe61pQEyz" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="ProjectId" id="1j4vRErKto0nc08zmrSzZsMiqaQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../easydeal/doc" />
-    <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="settings.webpack" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/../easydeal/node_modules/typescript/lib" />
-    <property name="ts.rename.search.for.js.occurrences" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/doc/en-US" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/types" />
-      <recent name="$PROJECT_DIR$/src/utils" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../easydeal/doc" />
-      <recent name="$PROJECT_DIR$/types" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/demo" />
+      <recent name="$PROJECT_DIR$/doc/en-US" />
     </key>
-  </component>
-  <component name="RunManager" selected="npm.serve">
-    <configuration name="build (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/../easydeal/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="dev (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/../easydeal/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dev" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dev" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="serve (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/../easydeal/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="serve" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="serve" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="npm.serve (1)" />
-        <item itemvalue="npm.dev (1)" />
-        <item itemvalue="npm.build (1)" />
-        <item itemvalue="npm.serve" />
-        <item itemvalue="npm.dev" />
-      </list>
-    </recent_temporary>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/doc/zh-CN" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="065cd9ea-2dae-42a0-a428-84c268d6428c" name="Default Changelist" comment="" />
-      <created>1602308934851</created>
+      <changelist id="577839f5-3d86-4580-9dbd-189b5537eb3a" name="Default Changelist" comment="" />
+      <created>1603076168051</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1602308934851</updated>
-      <workItem from="1602308935980" duration="12582000" />
-      <workItem from="1602470071895" duration="9583000" />
-      <workItem from="1602484985763" duration="459000" />
-      <workItem from="1602488859137" duration="7753000" />
-      <workItem from="1602556365908" duration="21575000" />
-      <workItem from="1602589377564" duration="1375000" />
-      <workItem from="1602642484495" duration="41237000" />
+      <updated>1603076168051</updated>
+      <workItem from="1603076169224" duration="6149000" />
     </task>
     <servers />
   </component>
@@ -160,36 +98,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="441" y="210" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602311203633">
-      <screen x="0" y="23" width="1440" height="797" />
-    </state>
-    <state x="441" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.797@0.23.1440.797" timestamp="1602311203633" />
-    <state width="1419" height="282" key="GridCell.Tab.0.bottom" timestamp="1602830703645">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="282" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602830703645" />
-    <state width="1419" height="136" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1602590762246" />
-    <state width="1419" height="282" key="GridCell.Tab.0.center" timestamp="1602830703643">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="282" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1602830703643" />
-    <state width="1419" height="136" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1602590762244" />
-    <state width="1419" height="282" key="GridCell.Tab.0.left" timestamp="1602830703642">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="282" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1602830703642" />
-    <state width="1419" height="136" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1602590762244" />
-    <state width="1419" height="282" key="GridCell.Tab.0.right" timestamp="1602830703644">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="282" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1602830703644" />
-    <state width="1419" height="136" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1602590762245" />
-    <state x="221" y="89" key="SettingsEditor" timestamp="1602560567954">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1602560567954" />
   </component>
 </project>

@@ -1,6 +1,11 @@
-@import "../../node_modules/element-ui/packages/theme-chalk/src/common/var.scss";
+// element style
+$--color-success: #67C23A !default;
+$--color-danger: #F56C6C !default;
+$--color-black: #000000 !default;
+$--color-white: #FFFFFF !default;
 
-/***涨跌幅***/
+//涨跌幅
+
 // 颜色定制
 $--fluctuation-color-danger-light: $--color-danger !default;
 $--fluctuation-color-danger: mix($--color-black, $--color-danger, 10%) !default;

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/FinanceUI.iml" filepath="$PROJECT_DIR$/.idea/FinanceUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/easydeal.iml" filepath="$PROJECT_DIR$/.idea/easydeal.iml" />
     </modules>
   </component>
 </project>

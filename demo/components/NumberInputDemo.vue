@@ -20,7 +20,6 @@
           <number-input v-model="min"/>
           <el-radio-group v-model="handleInvalid.min">
             <el-radio :label="'revision'">revision</el-radio>
-            <el-radio :label="'fallback'">fallback</el-radio>
             <el-radio :label="'prompt'">prompt</el-radio>
           </el-radio-group>
         </label>
@@ -31,7 +30,6 @@
           <number-input v-model="max"/>
           <el-radio-group v-model="handleInvalid.max">
             <el-radio :label="'revision'">revision</el-radio>
-            <el-radio :label="'fallback'">fallback</el-radio>
             <el-radio :label="'prompt'">prompt</el-radio>
           </el-radio-group>
         </label>
@@ -42,7 +40,6 @@
           <number-input v-model="decimalPlace" max="15"/>
           <el-radio-group v-model="handleInvalid.decimalPlace">
             <el-radio :label="'revision'">revision</el-radio>
-            <el-radio :label="'fallback'">fallback</el-radio>
             <el-radio :label="'prompt'">prompt</el-radio>
           </el-radio-group>
         </label>

@@ -54,7 +54,7 @@ export default {
 | min             | 支持的最小值，超出最小值的都为非法输入                       | number/string |        | 无，默认不限制                                               |
 | max             | 支持的最大值，超出最大值的都为非法输入                       | number/string |        | 无，默认不限制                                               |
 | supportNegative | 是否支持输入负数                                             | boolean       |        | false，一般金融类网站都不允许输入负数                        |
-| handleInvalid   | 处理非法输入的方式，当用户输入不合法时，应该怎么处理这些非法输入：每一个配置项都支持revision\|fallback\|prompt三种类型值，一共支持min，max，decimalPlace，supportNegative这4种配置，每一种配置都是可选的，例如{min:'revision',max:'prompt'} | object        |        | {     supportNegative: 'revision',     min: 'prompt',     max: 'prompt',     decimalPlace: 'revision'}  |
+| handleInvalid   | 处理非法输入的方式，当用户输入不合法时，应该怎么处理这些非法输入：每一个配置项都支持revision\|prompt三种类型值，一共支持min，max，decimalPlace，supportNegative这4种配置，每一种配置都是可选的，例如{min:'revision',max:'prompt'} | object        |        | {     supportNegative: 'revision',     min: 'prompt',     max: 'prompt',     decimalPlace: 'revision'}  |
 > 关于divisionUnit：
 >
 >如果设置了divisionUnit，当用户的输入不能整除divisionUnit时，会通过prompt事件提醒，但不在handleInvalid中divisionUnit的revision和fallback选项，因为想要监听用户输入操作完成必须监听blur事件才可以，但是这种情况并非最优选项，最终实现revision/fallback的操作交给开发者自行去完成。
@@ -75,7 +75,6 @@ export default {
 >   + max：如果用户输入了大于max的值，则强制转换成最大值。
 >   + supportNegative：如果用户输入了负号，默认过滤掉。
 >   + decimalPlace：当用户输入的小数位多于decimalPlace时，后面多余的小数位被强制截断丢掉。
-> + fallback：当用户输入了非法值时，强制将用户的输入更正回上一次输入的合法值或者空字符串。
 > + prompt：当用户输入了非法值时，仅分发prompt事件，由程序来控制（大多数情况用于给用户个性化提醒）。
 
 ## 事件
