@@ -15,23 +15,6 @@
   transition: background-color 300ms ease-out;
   color: #FFFFFF;
 }
-.ed-fluctuation.ed-fluctuation-red.font {
-  color: #F56C6C;
-  transition: color 300ms ease-out;
-}
-.ed-fluctuation.ed-fluctuation-red.border {
-  border: 1px #F56C6C solid;
-  transition: border-color 300ms ease-out;
-}
-.ed-fluctuation.ed-fluctuation-red.outline {
-  outline: 1px #F56C6C solid;
-  transition: outline-color 300ms ease-out;
-}
-.ed-fluctuation.ed-fluctuation-red.bg {
-  background-color: #F56C6C;
-  transition: background-color 300ms ease-out;
-  color: #FFFFFF;
-}
 a.ed-fluctuation.ed-fluctuation-green.font:hover,
 button.ed-fluctuation.ed-fluctuation-green.font:hover {
   color: #5daf34;
@@ -51,6 +34,23 @@ button.ed-fluctuation.ed-fluctuation-green.outline:active {
 a.ed-fluctuation.ed-fluctuation-green.bg:hover,
 button.ed-fluctuation.ed-fluctuation-green.bg:hover {
   background-color: #5daf34;
+}
+.ed-fluctuation.ed-fluctuation-red.font {
+  color: #F56C6C;
+  transition: color 300ms ease-out;
+}
+.ed-fluctuation.ed-fluctuation-red.border {
+  border: 1px #F56C6C solid;
+  transition: border-color 300ms ease-out;
+}
+.ed-fluctuation.ed-fluctuation-red.outline {
+  outline: 1px #F56C6C solid;
+  transition: outline-color 300ms ease-out;
+}
+.ed-fluctuation.ed-fluctuation-red.bg {
+  background-color: #F56C6C;
+  transition: background-color 300ms ease-out;
+  color: #FFFFFF;
 }
 a.ed-fluctuation.ed-fluctuation-red.font:hover,
 button.ed-fluctuation.ed-fluctuation-red.font:hover {

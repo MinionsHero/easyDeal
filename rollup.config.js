@@ -5,6 +5,7 @@ import babel from '@rollup/plugin-babel';
 import vue from 'rollup-plugin-ts-vue/dist/rollup-plugin-ts-vue.cjs'
 import scss from 'rollup-plugin-scss'
 import alias from '@rollup/plugin-alias'
+import less from 'rollup-plugin-less'
 // import {terser} from 'rollup-plugin-terser'
 import path from 'path'
 
@@ -34,7 +35,22 @@ const handleInput = function (input) {
             outputExt = 'css'
             break
     }
-    return start + '.' + outputExt
+    let path = ''
+    switch (true){
+        case start.includes('less'):
+            path = start.replace('/less','')
+            break
+        case start.includes('scss'):
+            path = start.replace('/scss','')
+            break
+        case start.includes('css'):
+            path = start.replace('/css','')
+            break
+        default:
+            path = start
+            break
+    }
+    return path + '.' + outputExt
 }
 export default [
     {
@@ -44,7 +60,7 @@ export default [
         input: 'components/vue2.x/Fluctuation.vue',
     },
     {
-        input: 'styles/fluctuation.scss',
+        input: 'styles/less/fluctuation.less',
     },
     {
         input: 'utils/toFixed.ts',
@@ -70,6 +86,9 @@ export default [
             commonjs({
                 include: 'node_modules/**',
                 extensions: ['.js', '.ts', '.d.ts', '.vue'],
+            }),
+            less({
+                output: output,
             }),
             scss({
                 output: output,

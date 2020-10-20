@@ -164,7 +164,7 @@ fluctuation组件默认有一套自己的样式，用于快捷设置字体/背�
    ```js
    import Vue from 'vue'
    import './ed-variables.scss'
-   import 'easy-deal/src/styles/fluctuation.scss'
+   import 'easy-deal/src/styles/scss/fluctuation.scss'
    // 或者(easy-deal引入全部样式)
    import 'easy-deal/src/styles/index.scss'
    

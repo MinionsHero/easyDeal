@@ -163,7 +163,7 @@ By default, the fluctuation component has its own style for quick font/backgroun
    ```js
    import Vue from 'vue'
    import './ed-variables.scss'
-   import 'easy-deal/src/styles/fluctuation.scss'
+   import 'easy-deal/src/styles/scss/fluctuation.scss'
    // or
    import 'easy-deal/src/styles/index.scss'
    
