@@ -73,7 +73,7 @@ export default [
             file: path.resolve(process.cwd(), 'lib', output),
             format: output.endsWith('.css') ? undefined : 'cjs',
         },
-        external: ['@babel/runtime', 'vue', 'vue-class-component'],
+        external: ['@babel/runtime', 'vue'],
         plugins: [
             alias({
                 resolve: ['.jsx', '.js', 'vue', 'ts', 'scss', 'less', 'css'],
