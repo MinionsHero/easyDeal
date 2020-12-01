@@ -10,7 +10,7 @@ export default {
   utils
 };
 
-export const version = "1.1.0";
+export const version = "1.1.1";
 
 export const install: PluginFunction<{}> = function (Vue) {
   Vue.use(NumberInput);

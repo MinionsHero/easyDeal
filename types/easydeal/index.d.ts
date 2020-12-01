@@ -1,4 +1,4 @@
-export * from "./easydeal/easydeal";
+export * from "./easydeal";
 
-import * as EasyDeal from "./easydeal/easydeal";
+import * as EasyDeal from "./easydeal";
 export default EasyDeal;
