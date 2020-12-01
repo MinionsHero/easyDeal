@@ -51,10 +51,12 @@ export default {
 | value           | Receiving the value of user's valid input,if user input [invalid] string,the value will be empty string. | string        |        | required                                             |
 | decimalPlace    | Allow decimal places.                                           | number        |        | none                                              |
 | divisionUnit    | Allow division unit,for example in NASDAQ,it is 1. | number/string |        | none                                             |
-| min             | Allow min value,if you set it ,when user inputs the value which is less than min, then inputting will be invalid.                    | number/string |        | none                                            |
+| min             | Allow min value,if you set it ,when user inputs the value which is less than min, then inputting will be invalid.                    | number/string |        | 0                                            |
 | max             | Allow max value,if you set it ,when user inputs the value which is greater than max, then inputting will be invalid.                       | number/string |        | none                                            |
-| supportNegative | Support to input negative value or not.                                           | boolean       |        | false                       |
-| handleInvalid   | How to handle invalid input, and how to handle illegal input when the user input is not valid: each configuration item supports two types(revision\/prompt) of values: min, max, decimalPlace, and supportNegative. Each configuration is optional, such as {min:'revision', Max :'prompt'} | object        |        | {     supportNegative: 'revision',     min: 'prompt',     max: 'prompt',     decimalPlace: 'revision'}  |
+| handleInvalid   | How to handle invalid input, and how to handle illegal input when the user input is not valid: each configuration item supports two types(revision\/prompt) of values: min, max, and decimalPlace. Each configuration is optional, such as {min:'revision', Max :'prompt'} | object        |        | {     min: 'prompt',     max: 'prompt',     decimalPlace: 'revision'}  |
+
+> supportNegative prop has been abandoned. The min attribute is used to automatically determine whether negative number is supported. If min=0, negative sign input is not supported.
+
 > divisionUnit：
 >
 > If divisionUnit is set, the user's input cannot divide divisionUnit, it will be prompted by a prompt event but not the options of revision of divisionUnit in handleInvalid because the listener of user's input must be done by listening to blur events. However, this is not the best option for revision, and it will be left to the developer to complete.
@@ -73,7 +75,6 @@ export default {
 > + revision：When user entered invalid value, it will be forced to valid one.Such as,
 >   + min：When user is entering,it will be forced transferring to min value.
 >   + max：When user is entering,it will be forced transferring to max value.
->   + supportNegative：When user is negative symbol,it will be blocked.
 >   + decimalPlace：When user entered number string that decimal place is greater than decimalPlace, the redundant decimal places will be truncated by force。
 > + prompt：When user enters an invalid value, only prompt an event, which are used by developers (in most cases for personalized reminders to the user).
 

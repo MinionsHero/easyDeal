@@ -51,11 +51,13 @@ export default {
 | value           | 用来接收用户输入的合法的数字字符串，但是如果用户输入的并非合法数字，则value接收到的并非输入框中的值，而是一个空字符串。 | string        |        | 必须项，无默认值                                             |
 | decimalPlace    | 允许输入的小数位数                                           | number        |        | 无，默认不限制                                               |
 | divisionUnit    | 用户输入的值需要可以整除的单位，例如A股一次输入必须是100的整数倍 | number/string |        | 无，默认不限制                                               |
-| min             | 支持的最小值，超出最小值的都为非法输入                       | number/string |        | 无，默认不限制                                               |
+| min             | 支持的最小值，超出最小值的都为非法输入                       | number/string |        | 0                                               |
 | max             | 支持的最大值，超出最大值的都为非法输入                       | number/string |        | 无，默认不限制                                               |
-| supportNegative | 是否支持输入负数                                             | boolean       |        | false，一般金融类网站都不允许输入负数                        |
-| handleInvalid   | 处理非法输入的方式，当用户输入不合法时，应该怎么处理这些非法输入：每一个配置项都支持revision\|prompt三种类型值，一共支持min，max，decimalPlace，supportNegative这4种配置，每一种配置都是可选的，例如{min:'revision',max:'prompt'} | object        |        | {     supportNegative: 'revision',     min: 'prompt',     max: 'prompt',     decimalPlace: 'revision'}  |
-> 关于divisionUnit：
+| handleInvalid   | 处理非法输入的方式，当用户输入不合法时，应该怎么处理这些非法输入：每一个配置项都支持revision\|prompt三种类型值，一共支持min，max，decimalPlace，supportNegative这4种配置，每一种配置都是可选的，例如{min:'revision',max:'prompt'} | object        |        | {     min: 'prompt',     max: 'prompt',     decimalPlace: 'revision'}  |
+
+> supportNegative 属性已废弃，通过min属性来自动判断是否支持负数，如果min=0是不支持负号输入的。
+
+>> 关于divisionUnit：
 >
 >如果设置了divisionUnit，当用户的输入不能整除divisionUnit时，会通过prompt事件提醒，但不在handleInvalid中divisionUnit的revision和fallback选项，因为想要监听用户输入操作完成必须监听blur事件才可以，但是这种情况并非最优选项，最终实现revision/fallback的操作交给开发者自行去完成。
 
@@ -73,7 +75,6 @@ export default {
 > + revision：当用户输入非法值时，强制将用户的输入更正，如：
 >   + min：如果用户输入了小于min的值，则强制转换成最小值。
 >   + max：如果用户输入了大于max的值，则强制转换成最大值。
->   + supportNegative：如果用户输入了负号，默认过滤掉。
 >   + decimalPlace：当用户输入的小数位多于decimalPlace时，后面多余的小数位被强制截断丢掉。
 > + prompt：当用户输入了非法值时，仅分发prompt事件，由程序来控制（大多数情况用于给用户个性化提醒）。
 

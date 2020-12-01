@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+    "target": "es5",
+    "module": "es2015",
     "strict": true,
     "jsx": "preserve",
     "importHelpers": true,
@@ -48,5 +48,6 @@
     "./types/shims-vue.d.ts",
     "./types/shims-tsx.d.ts",
     "./types/shims-scss.d.ts"
-  ]
+  ],
+  "types": "./types/main.d.ts"
 }
