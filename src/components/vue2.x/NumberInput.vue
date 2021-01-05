@@ -113,7 +113,6 @@ export default class NumberInput extends Vue implements NumberInputInterface {
 
   // 发送input事件
   emitInput({ value, input }) {
-    console.log("emit input", { value, input });
     this.$emit("input", value);
     this.inputValue = input;
     //当前处于prompt状态，value被置成了空字符串
