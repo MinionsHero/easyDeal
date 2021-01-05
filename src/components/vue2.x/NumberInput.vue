@@ -3,7 +3,7 @@
     type="text"
     v-bind="$attrs"
     v-on="listeners"
-    :value="inputValue"
+    v-model="inputValue"
     @input="handleInput"
   />
 </template>
